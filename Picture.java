@@ -67,6 +67,13 @@ public class Picture
             houseBase.moveVertical(150);
             houseBase.changeSize(100);
             houseBase.changeColor("red");
+            
+            // Draw the roof
+            roof.makeVisible();
+            roof.moveHorizontal(150);
+            roof.moveVertical(100);
+            roof.changeSize(50, 100);
+            roof.changeColor("green");
             drawn = true;
         }
     }

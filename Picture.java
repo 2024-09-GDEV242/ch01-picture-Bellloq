@@ -79,6 +79,11 @@ public class Picture
             sun.moveVertical(-50);
             sun.changeSize(60);
             
+            // Draw the tree trunk
+            trunk.makeVisible();
+            trunk.moveHorizontal(250);
+            trunk.moveVertical(200);
+            trunk.changeSize(30);
             drawn = true;
         }
     }
@@ -93,6 +98,7 @@ public class Picture
         houseBase.changeColor("black");
         roof.changeColor("black");
         sun.changeColor("black");
+        
     }
 
     /**
@@ -103,6 +109,6 @@ public class Picture
         roof.changeColor("green"); 
         houseBase.changeColor("red");
         sun.changeColor("orange");
-
+        trunk.changeColor("brown");
     }
 }

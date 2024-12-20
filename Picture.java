@@ -60,7 +60,13 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             */
-            
+           
+            // Draw the house base
+            houseBase.makeVisible();
+            houseBase.moveHorizontal(100);
+            houseBase.moveVertical(150);
+            houseBase.changeSize(100);
+            houseBase.changeColor("red");
             drawn = true;
         }
     }

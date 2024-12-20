@@ -66,14 +66,13 @@ public class Picture
             houseBase.moveHorizontal(100);
             houseBase.moveVertical(150);
             houseBase.changeSize(100);
-            houseBase.changeColor("red");
             
             // Draw the roof
             roof.makeVisible();
             roof.moveHorizontal(150);
             roof.moveVertical(100);
             roof.changeSize(50, 100);
-            roof.changeColor("green");
+            
             drawn = true;
         }
     }
@@ -83,8 +82,9 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
+        foliage.changeColor("black");
+        trunk.changeColor("black");
+        houseBase.changeColor("black");
         roof.changeColor("black");
         sun.changeColor("black");
     }
@@ -94,9 +94,9 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        roof.changeColor("green"); 
+        houseBase.changeColor("red");
+       
+
     }
 }

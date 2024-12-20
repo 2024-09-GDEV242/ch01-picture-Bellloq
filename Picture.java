@@ -73,6 +73,12 @@ public class Picture
             roof.moveVertical(100);
             roof.changeSize(50, 100);
             
+            // Draw the sun
+            sun.makeVisible();
+            sun.moveHorizontal(-50);
+            sun.moveVertical(-50);
+            sun.changeSize(60);
+            
             drawn = true;
         }
     }
@@ -96,7 +102,7 @@ public class Picture
     {
         roof.changeColor("green"); 
         houseBase.changeColor("red");
-       
+        sun.changeColor("orange");
 
     }
 }

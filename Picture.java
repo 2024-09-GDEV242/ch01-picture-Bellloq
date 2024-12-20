@@ -84,6 +84,12 @@ public class Picture
             trunk.moveHorizontal(250);
             trunk.moveVertical(200);
             trunk.changeSize(30);
+            
+            // Draw the tree foliage
+            foliage.makeVisible();
+            foliage.moveHorizontal(235);
+            foliage.moveVertical(150);
+            foliage.changeSize(60);
             drawn = true;
         }
     }
@@ -110,5 +116,6 @@ public class Picture
         houseBase.changeColor("red");
         sun.changeColor("orange");
         trunk.changeColor("brown");
+        foliage.changeColor("green");
     }
 }

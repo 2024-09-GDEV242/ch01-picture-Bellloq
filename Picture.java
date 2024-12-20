@@ -11,22 +11,23 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
+    private Square houseBase;
     private Triangle roof;
     private Circle sun;
+    private Square trunk;
+    private Circle foliage;
     private boolean drawn;
-    private Circle moon;
-
+       
     /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
+        houseBase = new Square();
+        roof = new Triangle();
         sun = new Circle();
+        trunk = new Square();
+        foliage = new Circle();
         drawn = false;
     }
 
@@ -36,6 +37,7 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            /*
             wall.moveHorizontal(-140);
             wall.moveVertical(20);
             wall.changeSize(120);
@@ -57,6 +59,8 @@ public class Picture
             sun.moveVertical(-40);
             sun.changeSize(80);
             sun.makeVisible();
+            */
+            
             drawn = true;
         }
     }
